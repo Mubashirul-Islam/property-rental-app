@@ -1,0 +1,31 @@
+id,title,description,price_per_night,bedrooms,bathrooms,max_guests,is_active,created_at,location_id
+1,Cozy Lake House,Peaceful stay near the lake,75.00,2,1,4,True,2025-01-10T10:30:00,1
+2,Ocean Breeze Villa,Beachfront property with sea view,120.00,3,2,6,True,2025-01-11T11:00:00,2
+3,Hilltop Retreat,Quiet home in the hills,90.00,2,2,5,True,2025-01-12T09:15:00,3
+4,City Center Apartment,Close to shops and restaurants,65.00,1,1,2,True,2025-01-13T14:45:00,1
+5,Green Park Condo,Modern condo near park,80.00,2,2,4,True,2025-01-14T16:20:00,4
+6,Riverside Cottage,Cottage with river view,70.00,2,1,3,True,2025-01-15T12:10:00,5
+7,Sunset Villa,Beautiful sunset views,110.00,3,2,6,True,2025-01-16T18:00:00,6
+8,Palm Street House,Family-friendly neighborhood,60.00,2,1,4,True,2025-01-17T13:30:00,7
+9,Airport Guesthouse,Convenient stay near airport,55.00,1,1,2,True,2025-01-18T08:00:00,8
+10,Forest Cabin,Nature retreat in forest,85.00,2,1,4,True,2025-01-19T07:45:00,9
+11,River Bend Bungalow,Relaxing riverside home,95.00,3,2,6,True,2025-01-20T10:00:00,10
+12,Modern City Flat,Stylish flat downtown,70.00,1,1,2,True,2025-01-21T11:15:00,1
+13,Sea Pearl Resort,Premium seaside stay,150.00,4,3,8,True,2025-01-22T12:00:00,2
+14,Hill View Apartment,Apartment with hill view,75.00,2,1,4,True,2025-01-23T09:30:00,3
+15,Urban Nest,Compact urban living,50.00,1,1,2,True,2025-01-24T15:45:00,4
+16,Riverfront Villa,Spacious riverfront villa,130.00,4,3,8,True,2025-01-25T17:00:00,5
+17,Sunrise Home,Perfect for early risers,65.00,2,1,4,True,2025-01-26T06:30:00,6
+18,Family Haven,Ideal for families,90.00,3,2,6,True,2025-01-27T14:00:00,7
+19,Transit Stay,Short stay near airport,45.00,1,1,2,True,2025-01-28T19:20:00,8
+20,Jungle Escape,Remote jungle retreat,100.00,3,2,6,True,2025-01-29T08:10:00,9
+21,Quiet Riverside Home,Peaceful riverside stay,85.00,2,2,4,True,2025-01-30T11:40:00,10
+22,Dhaka Budget Room,Affordable city room,40.00,1,1,2,True,2025-01-31T09:00:00,1
+23,Beachside Apartment,Steps from the beach,95.00,2,2,5,True,2025-02-01T16:10:00,2
+24,Hill Breeze House,Cool hill breeze home,88.00,3,2,6,True,2025-02-02T13:25:00,3
+25,Parkside Studio,Studio near park,55.00,1,1,2,True,2025-02-03T10:50:00,4
+26,Waterfront Retreat,Waterfront luxury stay,140.00,4,3,8,True,2025-02-04T18:30:00,5
+27,Golden Sunset Home,Sunset-facing house,105.00,3,2,6,True,2025-02-05T17:45:00,6
+28,Palm Comfort Stay,Comfortable palm area home,68.00,2,1,4,True,2025-02-06T12:00:00,7
+29,Airport Lounge Stay,Premium airport stay,75.00,1,1,2,True,2025-02-07T21:00:00,8
+30,Forest Edge Lodge,Lodge near forest edge,92.00,3,2,6,True,2025-02-08T07:20:00,9
