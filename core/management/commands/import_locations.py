@@ -1,6 +1,6 @@
 import csv
 from django.core.management.base import BaseCommand
-from rentals.models import Location
+from core.models import Location
 
 
 class Command(BaseCommand):

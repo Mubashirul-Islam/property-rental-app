@@ -17,12 +17,12 @@ Including another URLconf
 from django.conf import settings
 from django.contrib import admin
 from django.urls import path
-from rentals import views as rental_views
+from core import views as core_views
 from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', rental_views.property_grid, name='property-grid'),
+    path('', core_views.property_grid, name='property-grid'),
 ]
 
 if settings.DEBUG:

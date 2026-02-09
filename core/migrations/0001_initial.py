@@ -35,7 +35,7 @@ class Migration(migrations.Migration):
                 ('max_guests', models.PositiveSmallIntegerField(default=1)),
                 ('is_active', models.BooleanField(default=True)),
                 ('created_at', models.DateTimeField(auto_now_add=True)),
-                ('location', models.ForeignKey(null=True, on_delete=django.db.models.deletion.SET_NULL, related_name='properties', to='rentals.location')),
+                ('location', models.ForeignKey(null=True, on_delete=django.db.models.deletion.SET_NULL, related_name='properties', to='core.location')),
             ],
         ),
         migrations.CreateModel(
@@ -45,7 +45,7 @@ class Migration(migrations.Migration):
                 ('image', models.ImageField(upload_to='property_images/')),
                 ('alt_text', models.CharField(blank=True, max_length=200)),
                 ('is_primary', models.BooleanField(default=False)),
-                ('property', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='images', to='rentals.property')),
+                ('property', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='images', to='core.property')),
             ],
         ),
     ]

@@ -2,7 +2,7 @@ import csv
 from django.core.management.base import BaseCommand
 from django.utils.dateparse import parse_datetime
 
-from rentals.models import Property, Location
+from core.models import Property, Location
 
 
 class Command(BaseCommand):
