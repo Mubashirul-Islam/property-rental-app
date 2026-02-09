@@ -14,7 +14,7 @@ class Location(models.Model):
 
 class Image(models.Model):
     property = models.ForeignKey("Property", on_delete=models.CASCADE, related_name="images")
-    image_url = models.URLField(max_length=500)
+    image = models.ImageField(upload_to='property_images/')
     alt_text = models.CharField(max_length=200, blank=True)
     is_primary = models.BooleanField(default=False)
 
@@ -35,3 +35,12 @@ class Property(models.Model):
 
     def __str__(self) -> str:
         return self.title
+
+    def primary_image(self):
+        primary = self.images.filter(is_primary=True).first()
+        if primary:
+            return primary.image
+        fallback = self.images.first()
+        if fallback:
+            return fallback.image
+        return None
