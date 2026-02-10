@@ -123,7 +123,7 @@ if (!displayQuery) {
   renderEmpty("No search was provided.");
 } else {
   resultsTitle.textContent = `Properties in ${displayQuery}`;
-  resultsMeta.textContent = `Filtering by ${queryType}.`;
+  //resultsMeta.textContent = `Filtering by ${queryType}.`;
 
   fetch(`/api/properties/?${queryType}=${encodeURIComponent(displayQuery)}`)
     .then((response) => response.json())

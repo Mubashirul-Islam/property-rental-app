@@ -1,18 +1,22 @@
-{% extends "base.html" %} {% load static %} {% block title %}Property Rental |
+{% extends "base.html" %} {% load static %} {% block title %}Deshi Property |
 Home{% endblock %} {% block extra_css %}
 <link rel="stylesheet" href="{% static 'css/home.css' %}" />
 {% endblock %} {% block extra_js %}
 <script src="{% static 'js/home.js' %}" defer></script>
 {% endblock %} {% block content %}
 <section class="hero">
-  <span class="eyebrow">Stay anywhere</span>
-  <h1>Find your next place in seconds.</h1>
-  <p class="hero-copy">Search by city or country to see verified stays.</p>
+  <span class="eyebrow">Find. Rent. Live</span>
+  <h1>Find your dream place now.</h1>
+  <p class="hero-copy">Search to see verified properties.</p>
 
   <form id="search-form" class="search-form" autocomplete="off">
     <label class="sr-only" for="search-input">Search by city or country</label>
     <div class="search-field">
-      <input id="search-input" type="text" placeholder="Try Dhaka or Bangladesh" />
+      <input
+        id="search-input"
+        type="text"
+        placeholder="Search by location..."
+      />
       <button type="submit">Search</button>
     </div>
     <ul
