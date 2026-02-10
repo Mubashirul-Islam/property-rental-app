@@ -1,13 +1,13 @@
 from django.shortcuts import render
 
-from .models import Property
+
+def home(request):
+	return render(request, "home.html")
 
 
-def property_grid(request):
-    properties = (
-        Property.objects.filter(is_active=True)
-        .select_related("location")
-        .prefetch_related("images")
-        .order_by("-created_at")
-    )
-    return render(request, "property_grid.html", {"properties": properties})
+def property_list(request):
+	return render(request, "property_list.html")
+
+
+def property_detail(request, property_id):
+	return render(request, "property_detail.html", {"property_id": property_id})

@@ -1,0 +1,24 @@
+{% extends "base.html" %} {% load static %} {% block title %}Property Rental |
+Details{% endblock %} {% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/detail.css' %}" />
+{% endblock %} {% block extra_js %}
+<script src="{% static 'js/detail.js' %}" defer></script>
+{% endblock %} {% block main %}
+<main class="container" data-property-id="{{ property_id }}">
+  <section class="detail">
+    <div class="detail-media" id="detail-media">
+      <div class="media-placeholder" id="detail-placeholder">
+        Loading image...
+      </div>
+      <img id="detail-image" alt="" class="hidden" />
+    </div>
+    <div class="detail-info">
+      <span class="eyebrow" id="detail-location">Loading location</span>
+      <h1 id="detail-title">Loading property</h1>
+      <p id="detail-price" class="price"></p>
+      <div class="detail-stats" id="detail-stats"></div>
+      <p id="detail-description" class="muted"></p>
+    </div>
+  </section>
+</main>
+{% endblock %}

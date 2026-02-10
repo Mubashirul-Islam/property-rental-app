@@ -22,17 +22,11 @@ class LocationListView(generics.ListAPIView):
 class PropertyByLocationView(APIView):
     """
     API endpoint that returns properties filtered by city or country.
-    Query params: ?city=New York  OR  ?country=USA
+    Query params: ?city=Dhaka  OR  ?country=Bangladesh
     """
     def get(self, request):
         city = request.query_params.get('city', None)
         country = request.query_params.get('country', None)
-        
-        if not city and not country:
-            return Response(
-                {"error": "Please provide either 'city' or 'country' parameter"},
-                status=status.HTTP_400_BAD_REQUEST
-            )
         
         properties = Property.objects.filter(is_active=True)
         

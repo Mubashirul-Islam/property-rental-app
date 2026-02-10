@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{% block title %}Property Rental{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}" />
+    {% block extra_css %}{% endblock %}
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-row">
+        <a class="brand" href="/">Property Rental</a>
+        <nav class="nav-links">
+          <a href="/">Home</a>
+          <a href="/api/properties/">API</a>
+          <a href="/admin/">Admin</a>
+        </nav>
+      </div>
+    </header>
+
+    {% block main %}
+    <main class="container">{% block content %}{% endblock %}</main>
+    {% endblock %}
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <span class="footer-brand">Property Rental</span>
+        <span class="footer-copy">Minimal stays, trusted locations.</span>
+      </div>
+    </footer>
+
+    {% block extra_js %}{% endblock %}
+  </body>
+</html>

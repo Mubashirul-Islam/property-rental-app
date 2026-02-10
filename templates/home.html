@@ -1,0 +1,27 @@
+{% extends "base.html" %} {% load static %} {% block title %}Property Rental |
+Home{% endblock %} {% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}" />
+{% endblock %} {% block extra_js %}
+<script src="{% static 'js/home.js' %}" defer></script>
+{% endblock %} {% block content %}
+<section class="hero">
+  <span class="eyebrow">Stay anywhere</span>
+  <h1>Find your next place in seconds.</h1>
+  <p class="hero-copy">Search by city or country to see verified stays.</p>
+
+  <form id="search-form" class="search-form" autocomplete="off">
+    <label class="sr-only" for="search-input">Search by city or country</label>
+    <div class="search-field">
+      <input id="search-input" type="text" placeholder="Try Dhaka or Bangladesh" />
+      <button type="submit">Search</button>
+    </div>
+    <ul
+      id="suggestions"
+      class="suggestions hidden"
+      role="listbox"
+      aria-label="Location suggestions"
+    ></ul>
+  </form>
+</section>
+
+{% endblock %}

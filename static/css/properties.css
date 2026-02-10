@@ -1,0 +1,80 @@
+.results-header {
+  padding: 60px 0 24px;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  padding-bottom: 80px;
+}
+
+.property-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 320px;
+  box-shadow: var(--shadow);
+}
+
+.property-media {
+  height: 180px;
+  background: #e7e7dd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.property-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.property-body {
+  padding: 18px;
+  display: grid;
+  gap: 8px;
+}
+
+.property-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.property-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.empty-state {
+  padding: 40px;
+  text-align: center;
+  background: var(--surface);
+  border-radius: 18px;
+  border: 1px dashed var(--border);
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding-bottom: 80px;
+}
+
+.pagination button {
+  min-width: 120px;
+}
+
+.page-info {
+  color: var(--muted);
+  font-size: 0.95rem;
+}

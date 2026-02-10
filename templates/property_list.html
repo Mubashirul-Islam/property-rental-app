@@ -1,0 +1,22 @@
+{% extends "base.html" %} {% load static %} {% block title %}Property Rental |
+Results{% endblock %} {% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/properties.css' %}" />
+{% endblock %} {% block extra_js %}
+<script src="{% static 'js/properties.js' %}" defer></script>
+{% endblock %} {% block content %}
+<section class="results-header">
+  <span class="eyebrow">Search results</span>
+  <h1 id="results-title">Properties</h1>
+  <p id="results-meta" class="muted"></p>
+</section>
+
+<section id="results-grid" class="results-grid"></section>
+<div id="results-empty" class="empty-state hidden">
+  No properties found for this search.
+</div>
+<div class="pagination" id="pagination">
+  <button type="button" id="page-prev">Previous</button>
+  <div class="page-info" id="page-info"></div>
+  <button type="button" id="page-next">Next</button>
+</div>
+{% endblock %}
