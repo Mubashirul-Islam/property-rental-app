@@ -11,6 +11,23 @@ Details{% endblock %} {% block extra_css %}
         Loading image...
       </div>
       <img id="detail-image" alt="" class="hidden" />
+      <button
+        class="carousel-nav prev"
+        type="button"
+        id="carousel-prev"
+        aria-label="Previous image"
+      >
+        <span aria-hidden="true">&#8249;</span>
+      </button>
+      <button
+        class="carousel-nav next"
+        type="button"
+        id="carousel-next"
+        aria-label="Next image"
+      >
+        <span aria-hidden="true">&#8250;</span>
+      </button>
+      <div class="carousel-dots hidden" id="carousel-dots"></div>
     </div>
     <div class="detail-info">
       <span class="eyebrow" id="detail-location">Loading location</span>
